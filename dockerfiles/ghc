@@ -52,4 +52,4 @@ WORKDIR /home/user/
 # We set env, as this gets extracted by Webvm. This is optional.
 ENV HOME="/home/user" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C" PATH="/opt/ghc/${GHC}/bin:$PATH"
 RUN echo 'root:password' | chpasswd
-CMD [ "/opt/ghc/$GHC/bin/ghci" ]
+CMD [ "/opt/ghc/9.10.1/bin/ghci" ]
